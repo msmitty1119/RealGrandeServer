@@ -24,7 +24,7 @@ const allRouter = require('./routes/allRoutes')
 const app = express();
 app.use(express.json());
 let corspolicy ={
-    origin:'http://localhost:3000'
+    origin: process.env.FRONT_URL
 }
 
 
